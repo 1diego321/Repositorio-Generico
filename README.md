@@ -3,6 +3,7 @@
 
 • Repositorio generico para EFCore5. <br>
 • Se puede compilar y agregar las referencias DLL al proyecto o bien se pueden agregar las clases al proyecto y hacer los cambios deseados. <br>
+• Cuenta con documentación de comentarios XML <br>
 • Unicamente se debe indicar la clase entidad en el Generic del GenericRepository y enviar una instancia de DbContext en el constructor. <br>
 • Cuenta con la abstracción para implementar la inyección de dependencias. <br>
 • <b>IMPORTANTE:</b> Para guardar los cambios realizados en la base de datos se debe llamar al metodo SaveChanges del DbContext, esto lo hice
