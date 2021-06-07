@@ -28,10 +28,10 @@ namespace GenericRepository
         /// To commit changes on the database you have to call the SaveChanges method
         /// of your DbContext by yourself.
         /// </remarks>
-        /// <param name="_context">Your application dbContext instance.</param>
-        public GenericRepository(DbContext _context)
+        /// <param name="context">Your application dbContext instance.</param>
+        public GenericRepository(DbContext context)
         {
-            _dbEntity = _context.Set<TEntity>();
+            _dbEntity = context.Set<TEntity>();
         }
 
         /// <summary>
